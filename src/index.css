@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', 'Cantarell', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222222;
+}
+
+/* MAIN COLOR: #2DD275 */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text-accent {
+  color: #2DD275;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+  color: #2DD275;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #2DD275;
+}
+
+.me {
+  display: block;
+  margin: auto;
+  border: 1px solid #2DD275;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+}
+
+.bg-very-dark {
+  background-color: #111;
+}
+
+.main-container {
+  max-width: 600px;
+}
+
+.row {
+  margin: 0px;
+}
+
+/* NAVBAR - Start */
+
+.navbar-bordered {
+  border-top: 1px solid #2DD275;
+  border-bottom: 1px solid #2DD275;
+}
+
+.dropdown-menu {
+  background-color: #111;
+  border: 1px solid #2DD275;
+  min-width: auto;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #2DD275;
+}
+
+.navlist {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* NAVBAR - End */
+
+/* ABOUT PAGE - Start */
