@@ -14,17 +14,16 @@ code {
     monospace;
 }
 
+a:active, a:hover {
+  text-decoration: underline;
+  color: #2DD275;
+}
+
+.no-styling {
+  list-style-type: none;
+}
+
 .text-accent {
-  color: #2DD275;
-}
-
-.nav-link:active {
-  text-decoration: underline;
-  color: #2DD275;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
   color: #2DD275;
 }
 
@@ -61,10 +60,18 @@ code {
   background-color: #111;
   border: 1px solid #2DD275;
   min-width: auto;
+  padding: 0px;
+  border-radius: 0px;
 }
 
 .dropdown-divider {
   border-top: 1px solid #2DD275;
+  margin: 0px;
+}
+
+.dropdown-item:hover {
+  background-color: #2DD275;
+  color: #111;
 }
 
 .navlist {
@@ -74,4 +81,48 @@ code {
 
 /* NAVBAR - End */
 
-/* ABOUT PAGE - Start */
+/* PROJECTS PAGE - Start */
+
+.project-image {
+  display: block;
+  margin: auto;
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  border: 1px solid #2DD275;
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.project-image-loading {
+  opacity: 0;
+  transition: none;
+}
+
+/* PROJECTS PAGE - End */
+
+/* FOOTER - Start */
+
+.footer-links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-bg {
+  padding: 10px;
+  border: 0px solid #2DD275;
+  background-color: #2DD275;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+/* FOOTER - End */

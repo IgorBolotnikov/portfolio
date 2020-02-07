@@ -1,27 +1,32 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom";
 import Header from './components/header';
 import Navbar from './components/navbar';
 import Home from './components/home';
+import Projects from './components/projects';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <Header />
       <Navbar />
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+      <div className="container-md main-container pt-3 pb-5">
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+        </Switch>
+      </div>
+      <Footer />
+    </HashRouter>
   );
 }
 

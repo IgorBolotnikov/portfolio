@@ -13,14 +13,14 @@ export default function Navbar(props) {
         </li>
         <div className="dropdown">
           <a className="nav-link dropdown-toggle text-accent" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resume
+            My CV
           </a>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item text-accent" href="https://drive.google.com/file/d/1AgA7O7uNyCsMsvhrn5Ii4uxgZNG4ABm6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a className="dropdown-item text-accent pt-2 pb-2" href="https://drive.google.com/file/d/1AgA7O7uNyCsMsvhrn5Ii4uxgZNG4ABm6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               Russian
             </a>
             <div className="dropdown-divider"></div>
-            <a className="dropdown-item text-accent" href="https://drive.google.com/file/d/1rCcFuW5DhvoWmK35pDu84QUOVJY4GhKR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a className="dropdown-item text-accent pt-2 pb-2" href="https://drive.google.com/file/d/1rCcFuW5DhvoWmK35pDu84QUOVJY4GhKR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               English
             </a>
           </div>
