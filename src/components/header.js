@@ -9,8 +9,8 @@ export default function Header(props) {
           <img src={Image} alt="Me" className="me img-fluid"/>
         </div>
         <div className="credentials col-md-auto">
-          <h3 className="name text-yellow text-center text-accent m-1 mt-3">Igor Bolotnikov</h3>
-          <h5 className="position text-yellow m-1 text-center text-accent">Full Stack Software Developer</h5>
+          <h3 className="name text-primary text-center m-1 mt-3">Igor Bolotnikov</h3>
+          <h5 className="position text-warning m-1 text-center">Full Stack Software Developer</h5>
         </div>
       </div>
     </div>
