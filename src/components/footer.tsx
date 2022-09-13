@@ -1,9 +1,10 @@
 import React from 'react';
-import GitHubLogo from './../img/GitHub-logo-small.png';
-import HackerRankLogo from './../img/HackerRank-logo-small.png';
-import LinkedInLogo from './../img/LinkedIn-logo-small.png';
+import GitHubLogo from '../img/GitHub-logo-small.png';
+import HackerRankLogo from '../img/HackerRank-logo-small.png';
+import LinkedInLogo from '../img/LinkedIn-logo-small.png';
+import MailLogo from '../img/mail.png';
 
-export default function Footer(props) {
+export default function Footer(): React.ReactElement {
   return (
     <div className="footer bg-very-dark p-3">
       <div className="row justify-content-sm-center">
@@ -24,13 +25,11 @@ export default function Footer(props) {
               icon={LinkedInLogo}
               alt="LinkedIn"
             />
-          </ul>
-        </div>
-        <div className="col-sm-auto">
-          <ul className="footer-contacts-list  text-light no-styling pl-0">
-            <li className="text-white-50 text-center">Odessa, Odessa state, Ukraine.</li>
-            <li className="text-center"><a className="text-accent" href="mailto:igorbolotnikov1993@gmail.com">igorbolotnikov1993@gmail.com</a></li>
-            <li className="text-center"><a className="text-accent" href="tel:+380674485807">+380674485807</a></li>
+            <LinkIcon
+              link="mailto:igorbolotnikov1993@gmail.com"
+              icon={MailLogo}
+              alt="Mail"
+            />
           </ul>
         </div>
       </div>
@@ -38,13 +37,20 @@ export default function Footer(props) {
   );
 }
 
-function LinkIcon(props) {
+interface Props {
+  link: string
+  icon: string
+  alt: string
+}
+
+function LinkIcon(props: Props): React.ReactElement {
   return (
     <a href={props.link}
-      target="_blank"
-      rel="noopener noreferrer"
+       target="_blank"
+       rel="noopener noreferrer"
+       className="m-3"
     >
-      <li className="icon-bg m-3">
+      <li className="icon-bg">
         <img className="icon" src={props.icon} alt={props.alt} />
       </li>
     </a>

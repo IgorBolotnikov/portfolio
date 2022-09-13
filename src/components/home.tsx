@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home(props) {
+export default function Home(): React.ReactElement {
   return (
     <React.Fragment>
       <h4 className="text-accent">Hi!</h4>
@@ -34,7 +34,7 @@ export default function Home(props) {
           <h6 className="text-accent">Databases</h6>
           <p className="text-light mb-1">SQL</p>
           <ul className="no-styling">
-            <li className="text-light">PostfreSQL</li>
+            <li className="text-light">PostgreSQL</li>
             <li className="text-light">MySQL</li>
           </ul>
           <p className="text-light mb-1">NoSQL</p>

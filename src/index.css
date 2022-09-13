@@ -60,13 +60,11 @@ a:active, a:hover {
   background-color: #111;
   border: 1px solid #2DD275;
   min-width: auto;
-  padding: 0px;
   border-radius: 0px;
 }
 
 .dropdown-divider {
   border-top: 1px solid #2DD275;
-  margin: 0px;
 }
 
 .dropdown-item:hover {
@@ -83,8 +81,14 @@ a:active, a:hover {
 
 /* PROJECTS PAGE - Start */
 
+.project-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-image {
-  display: block;
+  display: inline-block;
   margin: auto;
   padding: 0px;
   width: 200px;
@@ -111,13 +115,13 @@ a:active, a:hover {
 }
 
 .icon {
-  display: block;
+  display: inline-block;
   height: 30px;
   width: 30px;
+  margin: 10px;
 }
 
 .icon-bg {
-  padding: 10px;
   border: 0px solid #2DD275;
   background-color: #2DD275;
   border-radius: 50%;

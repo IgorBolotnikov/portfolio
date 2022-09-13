@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Navbar(props) {
+export default function Navbar(): React.ReactElement {
   return (
     <nav className="navbar-bordered bg-very-dark">
       <ul className="nav navlist justify-content-around">
@@ -16,11 +16,11 @@ export default function Navbar(props) {
             My CV
           </a>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item text-accent pt-2 pb-2" href="https://drive.google.com/file/d/1AgA7O7uNyCsMsvhrn5Ii4uxgZNG4ABm6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a className="dropdown-item text-accent pt-2 pb-2" href="https://drive.google.com/file/d/1dv9CV9oiSK-itODFyFfh6uC183u04AoN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               Russian
             </a>
             <div className="dropdown-divider"></div>
-            <a className="dropdown-item text-accent pt-2 pb-2" href="https://drive.google.com/file/d/1rCcFuW5DhvoWmK35pDu84QUOVJY4GhKR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a className="dropdown-item text-accent pt-2 pb-2" href="https://drive.google.com/file/d/1RZdljXDVLZDGwur2U72NMnyvROv_-PO-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               English
             </a>
           </div>
