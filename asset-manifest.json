@@ -1,28 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e98a777.chunk.css",
-    "main.js": "/static/js/main.46879aa6.chunk.js",
-    "main.js.map": "/static/js/main.46879aa6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
-    "static/js/2.6e5ce7fa.chunk.js": "/static/js/2.6e5ce7fa.chunk.js",
-    "static/js/2.6e5ce7fa.chunk.js.map": "/static/js/2.6e5ce7fa.chunk.js.map",
+    "main.css": "/static/css/main.a85d2b3d.css",
+    "main.js": "/static/js/main.e71cf558.js",
+    "static/media/karate_cat.gif": "/static/media/karate_cat.76e7e129fe8ca9dbf8f0.gif",
+    "static/media/sudoku_solver.gif": "/static/media/sudoku_solver.2e3ca5e33fba0763a66c.gif",
+    "static/media/scrpr.png": "/static/media/scrpr.fdd4b3eb79c5db20e04f.png",
+    "static/media/coin_change_visualizer.png": "/static/media/coin_change_visualizer.298e99a4d118d61255d9.png",
+    "static/media/face.jpg": "/static/media/face.6a8ef05f1d1724e87215.jpg",
+    "static/media/LinkedIn-logo-small.png": "/static/media/LinkedIn-logo-small.4e7b004a7d5330ec9151.png",
+    "static/media/GitHub-logo-small.png": "/static/media/GitHub-logo-small.264a551cd40fd73e0fae.png",
     "index.html": "/index.html",
-    "precache-manifest.e3569cfaface56ae13823bb3352ce240.js": "/precache-manifest.e3569cfaface56ae13823bb3352ce240.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1e98a777.chunk.css.map": "/static/css/main.1e98a777.chunk.css.map",
-    "static/js/2.6e5ce7fa.chunk.js.LICENSE.txt": "/static/js/2.6e5ce7fa.chunk.js.LICENSE.txt",
-    "static/media/GitHub-logo-small.png": "/static/media/GitHub-logo-small.cf5ec9cb.png",
-    "static/media/LinkedIn-logo-small.png": "/static/media/LinkedIn-logo-small.167bf1c0.png",
-    "static/media/face.jpg": "/static/media/face.42d894b5.jpg",
-    "static/media/karate_cat.gif": "/static/media/karate_cat.39f7808b.gif",
-    "static/media/scrpr.png": "/static/media/scrpr.0fc3a681.png",
-    "static/media/sudoku_solver.gif": "/static/media/sudoku_solver.475bf47f.gif"
+    "main.a85d2b3d.css.map": "/static/css/main.a85d2b3d.css.map",
+    "main.e71cf558.js.map": "/static/js/main.e71cf558.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2b20a0b.js",
-    "static/js/2.6e5ce7fa.chunk.js",
-    "static/css/main.1e98a777.chunk.css",
-    "static/js/main.46879aa6.chunk.js"
+    "static/css/main.a85d2b3d.css",
+    "static/js/main.e71cf558.js"
   ]
 }
