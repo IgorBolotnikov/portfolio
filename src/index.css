@@ -34,7 +34,7 @@ a:active, a:hover {
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  padding: 0px;
+  padding: 0;
 }
 
 .bg-very-dark {
@@ -43,10 +43,11 @@ a:active, a:hover {
 
 .main-container {
   max-width: 600px;
+  min-height: calc(100vh - 130px - 42px - 148px);
 }
 
 .row {
-  margin: 0px;
+  margin: 0;
 }
 
 /* NAVBAR - Start */
@@ -60,7 +61,7 @@ a:active, a:hover {
   background-color: #111;
   border: 1px solid #2DD275;
   min-width: auto;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .dropdown-divider {
@@ -90,7 +91,7 @@ a:active, a:hover {
 .project-image {
   display: inline-block;
   margin: auto;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 200px;
   max-width: 200px;
@@ -122,7 +123,7 @@ a:active, a:hover {
 }
 
 .icon-bg {
-  border: 0px solid #2DD275;
+  border: 0 solid #2DD275;
   background-color: #2DD275;
   border-radius: 50%;
   height: 50px;
