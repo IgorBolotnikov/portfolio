@@ -24,3 +24,5 @@ yarn-error.log*
 
 # IDE cache
 .idea/
+
+size-plugin.json

@@ -1,4 +1,6 @@
-import React, { memo, useCallback, useLayoutEffect, useState } from 'react';
+/** @jsx h */
+import { VNode, h } from 'preact';
+import { memo, useCallback, useLayoutEffect, useState } from 'preact/compat';
 
 export type ImageDecoding = 'sync' | 'async';
 export type ImageLoading = 'eager' | 'lazy';
@@ -9,7 +11,7 @@ export interface IAsyncImageProps {
   decoding?: ImageDecoding
   loading?: ImageLoading
   className?: string
-  placeholder?: React.ReactElement
+  placeholder?: VNode
 }
 
 const classNames = (className: string, loading: boolean): string => {
@@ -20,6 +22,7 @@ const classNames = (className: string, loading: boolean): string => {
 };
 
 const useStatus = (src: string): [boolean, boolean, () => void, () => void] => {
+
   const [loaded, setLoaded] = useState<boolean | null>(null);
   useLayoutEffect(() => () => setLoaded(null), [src]);
 
@@ -30,14 +33,14 @@ const useStatus = (src: string): [boolean, boolean, () => void, () => void] => {
 };
 
 const Image = memo<IAsyncImageProps>(
-  function AsyncImage({
+  ({
     src,
     alt = '',
     placeholder,
     decoding = 'async',
     loading = 'lazy',
     className = 'async-image'
-  }: IAsyncImageProps): React.ReactElement {
+  }: IAsyncImageProps): VNode => {
     const [fetching, error, onLoad, onError] = useStatus(src);
 
     if (error && (placeholder != null)) return placeholder;

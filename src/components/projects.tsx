@@ -1,14 +1,15 @@
-import React from 'react';
+/** @jsx h */
+import { VNode, ComponentChildren, h } from 'preact';
 
-import SCRPRImage from '../img/scrpr.png';
-import KarateCatImage from '../img/karate_cat.gif';
-import SudokuSolverImage from '../img/sudoku_solver.gif';
-import CoinChangeVisualizerImage from '../img/coin_change_visualizer.png';
+import SCRPRImage from '../assets/img/scrpr.png';
+import KarateCatImage from '../assets/img/karate_cat.gif';
+import SudokuSolverImage from '../assets/img/sudoku_solver.gif';
+import CoinChangeVisualizerImage from '../assets/img/coin_change_visualizer.png';
 import Image from './image';
 
-export default function Projects(): React.ReactElement {
+export default function Projects(): VNode {
   return (
-    <React.Fragment>
+    <>
       <h4 className="text-accent text-center">Web Apps</h4>
       <ProjectCard
         image={SCRPRImage}
@@ -23,7 +24,7 @@ export default function Projects(): React.ReactElement {
         manually (just like me), come on in!
       </ProjectCard>
 
-      <div className="dropdown-divider"></div>
+      <div className="dropdown-divider" />
       <h4 className="text-accent text-center">Games</h4>
       <ProjectCard
         image={KarateCatImage}
@@ -42,7 +43,7 @@ export default function Projects(): React.ReactElement {
         visualised process of solving.
       </ProjectCard>
 
-      <div className="dropdown-divider"></div>
+      <div className="dropdown-divider" />
       <h4 className="text-accent text-center">Visualizers</h4>
       <ProjectCard
         image={CoinChangeVisualizerImage}
@@ -53,26 +54,26 @@ export default function Projects(): React.ReactElement {
         Visualizer of coin change algorithm with optimal amount of coins.
         Bonus feature is a playground with automated cachier business day simulation.
       </ProjectCard>
-    </React.Fragment>
+    </>
   );
 }
 
 interface ProjectCardProps {
   title: string
   image: string
-  children: React.ReactNode
+  children: ComponentChildren
   sourceCode?: string
   website?: string
 }
 
-function ProjectCard(props: ProjectCardProps): React.ReactElement {
+function ProjectCard(props: ProjectCardProps): VNode {
   const hasWebsite = Boolean(props.website);
   const hasCourceCode = Boolean(props.sourceCode);
   return (
     <div className="m-2 mt-4 mb-4 row justify-content-sm-center">
       <div className="col-sm-5 project-image-container">
         <a
-          href={props.website ?? props.sourceCode}
+          href={props.website !== undefined ? props.website : props.sourceCode}
           target="_blank"
           rel="noopener noreferrer"
         >

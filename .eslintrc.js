@@ -4,7 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:react/recommended',
+    'preact',
     'standard-with-typescript',
     'plugin:import/recommended',
     'plugin:import/typescript'
@@ -15,8 +15,10 @@ module.exports = {
     project: './tsconfig.json'
   },
   plugins: [
-    'react',
     'import'
+  ],
+  ignorePatterns: [
+    'build/'
   ],
   settings: {
     'import/parsers': {
@@ -27,16 +29,18 @@ module.exports = {
         alwaysTryTypes: true,
         project: '<root>/tsconfig.json'
       }
-    },
-    react: {
-      version: 'detect'
     }
   },
   rules: {
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
-    'react/jsx-tag-spacing': 'error',
     'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
-    'import/no-unresolved': 'error'
+    'import/no-unresolved': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        varsIgnorePattern: 'h'
+      }
+    ]
   }
 }

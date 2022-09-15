@@ -1,8 +1,9 @@
-import React from 'react';
+/** @jsx h */
+import { VNode, h } from 'preact';
 
-export default function Home(): React.ReactElement {
+export default function Home(): VNode {
   return (
-    <React.Fragment>
+    <>
       <h4 className="text-accent">Hi!</h4>
       <p className="text-light">
         I am an aspiring web developer. I love building great products with
@@ -24,8 +25,9 @@ export default function Home(): React.ReactElement {
           <h6 className="text-accent">Frontend</h6>
           <p className="text-light mb-1">JavaScript</p>
           <ul className="no-styling">
-            <li className="text-light">ReactJs</li>
-            <li className="text-light">Redux</li>
+            <li className="text-light">Angular</li>
+            <li className="text-light">React</li>
+            <li className="text-light">Preact</li>
           </ul>
         </div>
       </div>
@@ -51,6 +53,6 @@ export default function Home(): React.ReactElement {
           </ul>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 }

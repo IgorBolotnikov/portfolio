@@ -1,10 +1,11 @@
-import React from 'react';
-import GitHubLogo from '../img/GitHub-logo-small.png';
-import HackerRankLogo from '../img/HackerRank-logo-small.png';
-import LinkedInLogo from '../img/LinkedIn-logo-small.png';
-import MailLogo from '../img/mail.png';
+/** @jsx h */
+import { VNode, h } from 'preact';
+import GitHubLogo from '../assets/img/GitHub-logo-small.png';
+import HackerRankLogo from '../assets/img/HackerRank-logo-small.png';
+import LinkedInLogo from '../assets/img/LinkedIn-logo-small.png';
+import MailLogo from '../assets/img/mail.png';
 
-export default function Footer(): React.ReactElement {
+export default function Footer(): VNode {
   return (
     <div className="footer bg-very-dark p-3">
       <div className="row justify-content-sm-center">
@@ -43,7 +44,7 @@ interface Props {
   alt: string
 }
 
-function LinkIcon(props: Props): React.ReactElement {
+function LinkIcon(props: Props): VNode {
   return (
     <a href={props.link}
        target="_blank"

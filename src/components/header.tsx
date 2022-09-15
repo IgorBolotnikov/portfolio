@@ -1,8 +1,9 @@
-import React from 'react';
-import Me from '../img/face.jpg';
+/** @jsx h */
+import { VNode, h } from 'preact';
+import Me from '../assets/img/face.jpg';
 import Image from './image';
 
-export default function Header(): React.ReactElement {
+export default function Header(): VNode {
   return (
     <div className="header">
       <div className="info-container bg-very-dark pt-4 pb-4 row justify-content-md-center">
