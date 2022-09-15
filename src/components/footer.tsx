@@ -1,9 +1,9 @@
 /** @jsx h */
 import { VNode, h } from 'preact';
-import GitHubLogo from '../assets/img/GitHub-logo-small.png';
-import HackerRankLogo from '../assets/img/HackerRank-logo-small.png';
-import LinkedInLogo from '../assets/img/LinkedIn-logo-small.png';
-import MailLogo from '../assets/img/mail.png';
+import GitHubLogo from '../assets/img/GitHub-logo-small.svg';
+import HackerRankLogo from '../assets/img/HackerRank-logo-small.svg';
+import LinkedInLogo from '../assets/img/LinkedIn-logo-small.svg';
+import EMailLogo from '../assets/img/email.png';
 
 export default function Footer(): VNode {
   return (
@@ -28,8 +28,8 @@ export default function Footer(): VNode {
             />
             <LinkIcon
               link="mailto:igorbolotnikov1993@gmail.com"
-              icon={MailLogo}
-              alt="Mail"
+              icon={EMailLogo}
+              alt="eMail"
             />
           </ul>
         </div>
@@ -46,13 +46,14 @@ interface Props {
 
 function LinkIcon(props: Props): VNode {
   return (
-    <a href={props.link}
-       target="_blank"
-       rel="noopener noreferrer"
-       className="m-3"
+    <a
+      href={props.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="m-3"
     >
       <li className="icon-bg">
-        <img className="icon" src={props.icon} alt={props.alt} />
+        <img width={30} height={30} className="icon" src={props.icon} alt={props.alt} />
       </li>
     </a>
   );

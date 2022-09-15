@@ -15,7 +15,7 @@
     "test": "jest",
     "tsc": "tsc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "cp ./src/CNAME ./build/CNAME && gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -30,6 +30,7 @@
     ]
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "preact": "^10.11.0",
     "preact-render-to-string": "^5.2.4",
     "preact-router": "^4.1.0"

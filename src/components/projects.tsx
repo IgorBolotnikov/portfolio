@@ -1,10 +1,10 @@
 /** @jsx h */
 import { VNode, ComponentChildren, h } from 'preact';
 
-import SCRPRImage from '../assets/img/scrpr.png';
+import SCRPRImage from '../assets/img/scrpr.webp';
 import KarateCatImage from '../assets/img/karate_cat.gif';
 import SudokuSolverImage from '../assets/img/sudoku_solver.gif';
-import CoinChangeVisualizerImage from '../assets/img/coin_change_visualizer.png';
+import CoinChangeVisualizerImage from '../assets/img/coin_change_visualizer.webp';
 import Image from './image';
 
 export default function Projects(): VNode {

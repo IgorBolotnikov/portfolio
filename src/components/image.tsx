@@ -8,6 +8,8 @@ export type ImageLoading = 'eager' | 'lazy';
 export interface IAsyncImageProps {
   src: string
   alt?: string
+  width?: number
+  height?: number
   decoding?: ImageDecoding
   loading?: ImageLoading
   className?: string
@@ -35,7 +37,9 @@ const useStatus = (src: string): [boolean, boolean, () => void, () => void] => {
 const Image = memo<IAsyncImageProps>(
   ({
     src,
-    alt = '',
+    width,
+    height,
+    alt = 'Ooops...',
     placeholder,
     decoding = 'async',
     loading = 'lazy',
@@ -44,7 +48,7 @@ const Image = memo<IAsyncImageProps>(
     const [fetching, error, onLoad, onError] = useStatus(src);
 
     if (error && (placeholder != null)) return placeholder;
-    const props = { alt, src, decoding, loading, onLoad, onError };
+    const props = { alt, src, width, height, decoding, loading, onLoad, onError };
 
     return <img {...props} className={classNames(className, fetching)} />;
   }
