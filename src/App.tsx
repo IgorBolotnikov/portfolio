@@ -1,11 +1,12 @@
 /** @jsx h */
 import { VNode, h } from 'preact';
 import { Router, Route } from 'preact-router';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
-import Header from './components/header';
-import Home from './components/home';
-import Projects from './components/projects';
+// Default imports ensure route-based code splitting.
+import Navbar from 'src/components/Navbar';
+import Header from 'src/components/Header';
+import Home from 'src/components/Home';
+import Projects from 'src/components/Projects';
+import Footer from 'src/components/Footer';
 
 function App(): VNode {
   return (

@@ -1,11 +1,13 @@
 /** @jsx h */
 import { VNode, h } from 'preact';
-import GitHubLogo from '../assets/img/GitHub-logo-small.svg';
-import HackerRankLogo from '../assets/img/HackerRank-logo-small.svg';
-import LinkedInLogo from '../assets/img/LinkedIn-logo-small.svg';
-import EMailLogo from '../assets/img/email.png';
+import GitHubLogo from 'src/assets/img/GitHub-logo-small.svg';
+import HackerRankLogo from 'src/assets/img/HackerRank-logo-small.svg';
+import LinkedInLogo from 'src/assets/img/LinkedIn-logo-small.svg';
+import EMailLogo from 'src/assets/img/email.png';
 
-export default function Footer(): VNode {
+import './Footer.sass';
+
+export function Footer(): VNode {
   return (
     <div className="footer bg-very-dark p-3">
       <div className="row justify-content-sm-center">

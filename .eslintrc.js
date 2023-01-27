@@ -34,7 +34,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
-    'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
+    'import/order': ['error', { groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'] }],
     'import/no-unresolved': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',

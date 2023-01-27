@@ -1,13 +1,14 @@
 /** @jsx h */
 import { VNode, ComponentChildren, h } from 'preact';
 
-import SCRPRImage from '../assets/img/scrpr.webp';
-import KarateCatImage from '../assets/img/karate_cat.gif';
-import SudokuSolverImage from '../assets/img/sudoku_solver.gif';
-import CoinChangeVisualizerImage from '../assets/img/coin_change_visualizer.webp';
-import Image from './image';
+import SCRPRImage from 'src/assets/img/scrpr.webp';
+import KarateCatImage from 'src/assets/img/karate_cat.gif';
+import SudokuSolverImage from 'src/assets/img/sudoku_solver.gif';
+import CoinChangeVisualizerImage from 'src/assets/img/coin_change_visualizer.webp';
+import { Image } from 'src/components/shared/Image';
+import 'src/components/Projects/Projects.sass';
 
-export default function Projects(): VNode {
+export function Projects(): VNode {
   return (
     <>
       <h4 className="text-accent text-center">Web Apps</h4>

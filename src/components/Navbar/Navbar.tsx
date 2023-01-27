@@ -2,7 +2,9 @@
 import { VNode, h } from 'preact';
 import { Link } from 'preact-router';
 
-export default function Navbar(): VNode {
+import './Navbar.sass';
+
+export function Navbar(): VNode {
   return (
     <nav className="navbar-bordered bg-very-dark">
       <ul className="nav navlist justify-content-center">

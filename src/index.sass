@@ -1,0 +1,44 @@
+@import './styles/vars'
+@import './components'
+
+body
+	margin: 0
+	font-family: 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	background-color: var(--color-background-light)
+
+code
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+a:active, a:hover
+	text-decoration: underline
+	color: var(--color-accent)
+
+.no-styling
+	list-style-type: none
+
+.text-main
+	color: var(--color-text)
+
+.text-accent
+	color: var(--color-accent)
+
+.me
+	display: block
+	margin: auto
+	border: 1px solid var(--color-accent)
+	border-radius: 50%
+	height: 100px
+	width: 100px
+	padding: 0
+
+.bg-very-dark
+	background-color: var(--color-background-dark)
+
+.main-container
+	max-width: 600px
+	min-height: calc(100vh - 130px - 42px - 148px)
+
+.row
+	margin: 0
