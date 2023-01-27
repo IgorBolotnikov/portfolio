@@ -86,10 +86,10 @@ function ProjectCard(props: ProjectCardProps): VNode {
       </div>
       <div className="col-sm-7">
         <h5 className="text-accent text-center pt-2">{props.title}</h5>
-        <p className="text-light">{props.children}</p>
+        <p className="text-main">{props.children}</p>
         {hasWebsite &&
           <a className="text-accent" href={props.website} target="_blank" rel="noopener noreferrer">Visit website</a>}
-        {hasWebsite && hasCourceCode ? (<span className="text-light"> | </span>) : ('')}
+        {hasWebsite && hasCourceCode ? (<span className="text-main"> | </span>) : ('')}
         {hasCourceCode &&
           <a className="text-accent" href={props.sourceCode} target="_blank" rel="noopener noreferrer">Source code</a>}
       </div>

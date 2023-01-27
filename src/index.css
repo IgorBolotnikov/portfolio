@@ -4,7 +4,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #222222;
+  --color-background-light: #222;
+  --color-background-dark: #111;
+  --color-text: #f8f9fa;
+  --color-accent: #2DD275;
+  background-color: var(--color-background-light);
 }
 
 /* MAIN COLOR: #2DD275 */
@@ -16,21 +20,25 @@ code {
 
 a:active, a:hover {
   text-decoration: underline;
-  color: #2DD275;
+  color: var(--color-accent);
 }
 
 .no-styling {
   list-style-type: none;
 }
 
+.text-main {
+  color: var(--color-text);
+}
+
 .text-accent {
-  color: #2DD275;
+  color: var(--color-accent);
 }
 
 .me {
   display: block;
   margin: auto;
-  border: 1px solid #2DD275;
+  border: 1px solid var(--color-accent);
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -38,7 +46,7 @@ a:active, a:hover {
 }
 
 .bg-very-dark {
-  background-color: #111;
+  background-color: var(--color-background-dark);
 }
 
 .main-container {
@@ -53,24 +61,24 @@ a:active, a:hover {
 /* NAVBAR - Start */
 
 .navbar-bordered {
-  border-top: 1px solid #2DD275;
-  border-bottom: 1px solid #2DD275;
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
 }
 
 .dropdown-menu {
-  background-color: #111;
-  border: 1px solid #2DD275;
+  background-color: var(--color-background-dark);
+  border: 1px solid var(--color-accent);
   min-width: auto;
   border-radius: 0;
 }
 
 .dropdown-divider {
-  border-top: 1px solid #2DD275;
+  border-top: 1px solid var(--color-accent);
 }
 
 .dropdown-item:hover {
-  background-color: #2DD275;
-  color: #111;
+  background-color: var(--color-accent);
+  color: var(--color-background-dark);
 }
 
 .navlist {
@@ -95,7 +103,7 @@ a:active, a:hover {
   width: 200px;
   height: 200px;
   max-width: 200px;
-  border: 1px solid #2DD275;
+  border: 1px solid var(--color-accent);
   opacity: 1;
   transition: opacity .5s;
 }
@@ -121,11 +129,19 @@ a:active, a:hover {
 }
 
 .icon-bg {
-  border: 0 solid #2DD275;
-  background-color: #2DD275;
+  border: 0 solid var(--color-accent);
+  background-color: var(--color-accent);
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
 
 /* FOOTER - End */
+
+@media(prefers-color-scheme: light) {
+  body {
+    --color-background-light: #fff;
+    --color-background-dark: #eee;
+    --color-text: #343a40;
+  }
+}
