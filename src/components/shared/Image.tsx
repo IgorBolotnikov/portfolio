@@ -24,7 +24,6 @@ const classNames = (className: string, loading: boolean): string => {
 };
 
 const useStatus = (src: string): [boolean, boolean, () => void, () => void] => {
-
   const [loaded, setLoaded] = useState<boolean | null>(null);
   useLayoutEffect(() => () => setLoaded(null), [src]);
 
@@ -34,7 +33,7 @@ const useStatus = (src: string): [boolean, boolean, () => void, () => void] => {
   return [loaded === null, loaded === false, onLoad, onError];
 };
 
-const Image = memo<IAsyncImageProps>(
+export const Image = memo<IAsyncImageProps>(
   ({
     src,
     width,
@@ -47,10 +46,11 @@ const Image = memo<IAsyncImageProps>(
   }: IAsyncImageProps): VNode => {
     const [fetching, error, onLoad, onError] = useStatus(src);
 
-    if (error && (placeholder != null)) return placeholder;
+    if (error && (placeholder != null)) {
+      return placeholder;
+    }
     const props = { alt, src, width, height, decoding, loading, onLoad, onError };
 
     return <img {...props} className={classNames(className, fetching)} />;
   }
 );
-export default Image;

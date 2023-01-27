@@ -1,7 +1,9 @@
 /** @jsx h */
 import { VNode, h } from 'preact';
 
-export default function Home(): VNode {
+import './Home.sass';
+
+export function Home(): VNode {
   return (
     <>
       <h4 className="text-accent">Hi!</h4>

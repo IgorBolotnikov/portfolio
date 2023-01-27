@@ -1,9 +1,11 @@
 /** @jsx h */
 import { VNode, h } from 'preact';
-import Me from '../assets/img/face.webp';
-import Image from './image';
+import Me from 'src/assets/img/face.webp';
+import { Image } from 'src/components/shared/Image';
 
-export default function Header(): VNode {
+import './Header.sass';
+
+export function Header(): VNode {
   return (
     <div className="header">
       <div className="info-container bg-very-dark pt-4 pb-4 row justify-content-md-center">
