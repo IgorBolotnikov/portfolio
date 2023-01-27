@@ -10,7 +10,7 @@ export default function Footer(): VNode {
     <div className="footer bg-very-dark p-3">
       <div className="row justify-content-sm-center">
         <div className="col-sm-auto">
-          <ul className="footer-links-list text-light no-styling pl-0">
+          <ul className="footer-links-list text-main no-styling pl-0">
             <LinkIcon
               link="https://github.com/IgorBolotnikov"
               icon={GitHubLogo}
